@@ -30,7 +30,7 @@ public class TimelineEvent {
     }
 
     public String getName(){
-        LocalTime time = new LocalTime()
+        LocalTime time = new LocalTime();
         return this.name;
     }
 
