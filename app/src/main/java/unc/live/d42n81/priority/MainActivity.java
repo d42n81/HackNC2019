@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //    }
 //=======
-        View red = (View) findViewById(R.id.red);
+        View red = (View) findViewById(R.id);
 //>>>>>>> Stashed changes
 
     }

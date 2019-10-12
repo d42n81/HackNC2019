@@ -30,7 +30,6 @@ public class TimelineEvent {
     }
 
     public String getName(){
-        LocalTime time = new LocalTime()
         return this.name;
     }
 
@@ -42,8 +41,8 @@ public class TimelineEvent {
         return this.priority;
     }
 
-    public long updatePriority(){
-        this.priority = calculatePriority(this.eventDate);
+    public long updatePriority(){ this.priority = calculatePriority(this.eventDate);
+        return this.priority;
     }
 
     private long calculatePriority(LocalDateTime event){
