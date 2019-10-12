@@ -15,18 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-//<<<<<<< Updated upstream
-//
-//    }
-//=======
-        View red = (View) findViewById(R.id);
-//>>>>>>> Stashed changes
-=======
 
         View red = (View) findViewById(R.id.red);
-
->>>>>>> da4d88d958a669ef063fee9c130e2993a9dbb6bb
 
     }
 }
