@@ -2,15 +2,28 @@ package unc.live.d42n81.priority;
 
 import java.time.LocalDateTime;
 
-public class TimelineDate {
+public class TimelineEvent {
 
-    LocalDateTime eventDate;
-    String name;
-    String desc;
+    private LocalDateTime eventDate;
+    private String name;
+    private String desc;
+    private int priority;
 
-    public TimelineDate(LocalDateTime eventDate, String name, String desc){
+    public TimelineEvent(LocalDateTime eventDate, String name, String desc){
         this.eventDate = eventDate;
         this.name = name;
         this.desc = desc;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public String getDesc(){
+        return this.desc;
+    }
+
+    public int getPriority(){
+        return this.priority;
     }
 }
