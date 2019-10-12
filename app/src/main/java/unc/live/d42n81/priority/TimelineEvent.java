@@ -13,6 +13,7 @@ public class TimelineEvent {
         this.eventDate = eventDate;
         this.name = name;
         this.desc = desc;
+        this.priority = 0;
     }
 
     public String getName(){
