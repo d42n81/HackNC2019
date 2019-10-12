@@ -20,8 +20,9 @@
         android:layout_height="wrap_content">
 
         <View
+            android:id="@+id/black"
             android:layout_width="10dp"
-            android:layout_height="800dp"
+            android:layout_height="match_parent"
             android:background="#000000">
         </View>
 
@@ -31,30 +32,39 @@
             android:orientation="vertical">
 
             <View
-                android:layout_width="500dp"
+                android:id="@+id/red"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#ff0000">
-            </View>
+                android:background="#ff0000"
+                android:clickable="true"></View>
+
             <View
-                android:layout_width="500dp"
+                android:id="@+id/blue"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#0000ff">
-            </View>
+                android:background="#0000ff"
+                android:clickable="true"></View>
+
             <View
-                android:layout_width="500dp"
+                android:id="@+id/green"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#32CD32">
-            </View>
+                android:background="#32CD32"
+                android:clickable="true"></View>
+
             <View
-                android:layout_width="500dp"
+                android:id="@+id/magenta"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#ff00ff">
-            </View>
+                android:background="#ff00ff"
+                android:clickable="true"></View>
+
             <View
-                android:layout_width="500dp"
+                android:id="@+id/gold"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#FFD700">
-            </View>
+                android:background="#FFD700"
+                android:clickable="true"></View>
 
 
         </LinearLayout>
