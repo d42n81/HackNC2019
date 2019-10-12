@@ -6,6 +6,9 @@ public class Timeline {
 
     ArrayList<Stream> streams = new ArrayList<Stream>();
     // TODO encapulsate scale of timeline. Either 12 hours, 7 days, 4 weeks, etc. Use that value to figure out
+    int startHour = 0;
+    int endHour = 0;
+    int scroll = 0;
 
     public Timeline() {
         // Make a Stream();

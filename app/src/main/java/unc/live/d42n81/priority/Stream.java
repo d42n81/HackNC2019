@@ -15,6 +15,7 @@ public class Stream {
 
     ArrayList<TimelineEvent> arrayListOfEvents = new ArrayList<TimelineEvent>(5);
     TimelineEvent[] arrayOfEvents;
+    // Settings are color, title
 
 //    = timelinePriorityQueue.toArray();
 
