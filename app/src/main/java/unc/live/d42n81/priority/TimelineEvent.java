@@ -30,10 +30,6 @@ public class TimelineEvent {
     }
 
     public String getName(){
-<<<<<<< HEAD
-=======
-        LocalTime time = new LocalTime();
->>>>>>> da4d88d958a669ef063fee9c130e2993a9dbb6bb
         return this.name;
     }
 
