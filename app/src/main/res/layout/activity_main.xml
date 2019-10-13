@@ -84,7 +84,7 @@
             android:layout_marginTop="30dp"
             android:background="@android:color/black"
             android:onClick="settingsOnClick"
-            android:text="Settings"
+            android:text="Add a Stream"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="36sp">

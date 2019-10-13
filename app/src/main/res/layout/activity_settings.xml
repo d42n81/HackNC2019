@@ -11,20 +11,20 @@
         android:orientation="vertical"
         android:layout_margin="10dp">
 
-        <Button
-            android:id="@+id/fontColor"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="openColorPicker"
-            android:text="Text Color"
-            android:layout_margin="5dp"/>
+            android:layout_margin="5dp"
+            android:hint="Please select the Title of your Stream"/>
+
+
 
         <Button
             android:id="@+id/bgColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="openColorPicker"
-            android:text="Background Color"
+            android:text="Select Color of Stream"
             android:layout_margin="5dp"/>
     </LinearLayout>
 </ScrollView>
