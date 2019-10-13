@@ -25,6 +25,10 @@ public class Timeline {
         s.addEvent(event);
     }
 
+    public void addStream(){
+        streams.add(new Stream());
+    }
+
     public ArrayList<Stream> getStreams() { return this.streams; }
 
     public ArrayList<Stream> setStreams(ArrayList<Stream> newStreams) {
