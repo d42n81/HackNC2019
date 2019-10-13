@@ -3,6 +3,7 @@ package unc.live.d42n81.priority;
 import androidx.annotation.IdRes;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.widget.Toast;
@@ -18,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
 
         View red = (View) findViewById(R.id.red);
 
+    }
+
+    public void settingsOnClick(View v) {
+        Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
+        startActivity(settingsIntent);
     }
 }
 
