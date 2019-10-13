@@ -20,4 +20,11 @@ public class Timeline {
         // get scale. Take 1/ percentage of scale and multiply by scale.
         // Add event to stream with that time mapped from scale click,
     }
+
+    public ArrayList<Stream> getStreams() { return this.streams; }
+
+    public ArrayList<Stream> setStreams(ArrayList<Stream> newStreams) {
+        this.streams = newStreams;
+        return this.streams;
+    }
 }
