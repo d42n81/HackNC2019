@@ -16,9 +16,13 @@ public class Timeline {
         this.streams.add(firstStream);
     }
 
-    public void addEvent(Stream s, int percentOfScale) {
+    public void addEvent(Stream s, int percentOfScale, int hour, int minute,
+                         String eventName, String eventDesc) {
         // get scale. Take 1/ percentage of scale and multiply by scale.
         // Add event to stream with that time mapped from scale click,
+        TimelineEvent event = new TimelineEvent(hour, minute, eventName, eventDesc,
+                    percentOfScale);
+        s.addEvent(event);
     }
 
     public ArrayList<Stream> getStreams() { return this.streams; }
