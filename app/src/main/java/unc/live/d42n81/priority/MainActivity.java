@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 
 import android.util.Log;
+import android.view.Display;
 import android.view.MotionEvent;
 import android.widget.Toast;
 
@@ -15,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    Timeline timeline;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,9 +33,8 @@ public class MainActivity extends AppCompatActivity {
         green.setOnTouchListener(handleTouch);
         magenta.setOnTouchListener(handleTouch);
         gold.setOnTouchListener(handleTouch);
-
+        timeline = new Timeline();
     }
-
     private View.OnTouchListener handleTouch = new View.OnTouchListener() {
 
         @Override
@@ -50,7 +52,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case MotionEvent.ACTION_UP:
                     Log.i("TAG", "touched up");
-
+                    Display display = getWindowManager().getDefaultDisplay();
+                    Point size = new Point();
+                    display.getSize(size);
+                    int width = size.x;
+                    double percent = Math.floor(x/width);
+                    //timeline.addEvent(percent, );
                     break;
             }
 
